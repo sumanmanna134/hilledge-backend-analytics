@@ -14,9 +14,7 @@ import { HttpService } from '@nestjs/axios';
 
 @Module({
   imports: [
-    MongooseModule.forRoot(
-      'mongodb+srv://hilledge:AZtvQFzg05Ksmy8E@hilledge-clutser.seo7w.mongodb.net/hilledge',
-    ),
+    MongooseModule.forRoot(''),
     MongooseModule.forFeature([
       { name: BlockedIp.name, schema: BlockedIpSchema },
     ]),

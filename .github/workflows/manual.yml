@@ -18,7 +18,7 @@ jobs:
       - name: Print Input
         if: ${{ github.event.inputs.environment == 'production' }}
         run: |
-           echo "Environment: ${{github.event.inputs.environment}}"
+           echo "Environment: ${{github.event.inputs.environment}}  ${{default-branch}}"
       - name: Development
         if: ${{ github.event.inputs.environment == 'production' }}
         run: |

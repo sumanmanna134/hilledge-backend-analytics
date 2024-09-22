@@ -16,5 +16,12 @@ jobs:
     runs-on: 'ubuntu-latest'
     steps:
       - name: Print Input
+        if: github.event.inputs.environment == "production";
         run: |
            echo "Environment: ${{github.event.inputs.environment}}"
+      - name: Development
+        if: github.event.inputs.environment == "development";
+        run: |
+           echo "Environment: ${{github.event.inputs.environment}}"
+          
+        

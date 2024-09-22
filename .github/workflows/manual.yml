@@ -17,4 +17,4 @@ jobs:
     steps:
       - name: Print Input
         run: |
-           echo "Environment: ${{github.event.input.environment}}"
+           echo "Environment: ${{github.event.inputs.environment}}"
